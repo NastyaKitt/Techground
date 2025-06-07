@@ -1,0 +1,1213 @@
+@font-face {
+    font-family: 'Proba Pro';
+    src: local('Proba Pro Regular'), local('ProbaPro-Regular'), url('font/Probaproregular.woff2') format('woff2'), url('font/Probaproregular.woff') format('woff'), url('font/Probaproregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Root UI';
+    src: local('PT Root UI Regular'), local('PT Root UI-Regular'), url('font/PT-Root-UI_Bold.ttf') format('ttf'), url('font/PT-Root-UI_Regular.ttf') format('ttf'), url('font/PT-Root-UI_VF.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Proba Pro';
+    font-weight: 400;
+    font-style: normal;
+    color: #212F3D;
+}
+html {
+    padding: 2rem;
+}
+button {
+    cursor: pointer;
+}
+/* Внутренние отступы */
+.heroBlock, .forUs, .service, .developed, .rate, .advantages, .scheme, .tecnology, .review, .blog, .form2, footer {
+    padding: 0 8.5rem;
+}
+/* Шапка */
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.headerLeft {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10rem;
+    & .line {
+        height: 100%;
+        width: 1px;
+        background-color: #DFE2EB;
+        margin: 0 5rem 0 3rem;
+    }
+    & nav {
+        width: 32.625rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & a {
+            font-weight: 600;
+            color: #000;
+            text-decoration: none;
+            transition: color 0.1s;
+            &:hover {
+                color: #6B7888;
+                transition: color 0.1s;
+            }
+        }
+    }
+}
+.headerRight {
+    padding-right: 10rem;
+    & button {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        border: 1px solid #E9EDFA;
+        background-color: transparent;
+        transition: background-color 0.1s;
+        &:hover {
+            background-color: #dddfe2;
+            transition: background-color 0.1s;
+        }
+
+        &:first-child {
+            margin-right: 5px;
+        }
+    }
+    & a {
+        &:first-child {
+            color: #00AEEF;
+            &:hover {
+                color: #209dca;
+                transition: color 0.1s;
+            }
+
+        }
+        &:nth-child(2) {
+            text-decoration: none;
+            color: #000;
+            margin: 0 2.5rem 0 1rem;
+        }
+        transition: color 0.1s;
+        &:hover {
+            color: #6B7888;
+            transition: color 0.1s;
+        }
+
+    }
+}
+/* Первый блок */
+.heroBlock {
+    height: 48rem;
+    border-radius: 1rem;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    overflow: hidden;
+    & .myVideo {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        right: 0;
+    }
+    & .heroLeft {
+        z-index: 2;
+        & h1 {
+            font-size: 4.5rem;
+            font-weight: 500;
+            line-height: 74px;
+            letter-spacing: -1px;
+            & b {
+                color: #00AEEF;
+            }
+        }
+        & p {
+            margin: 2rem 0;
+            font-family: 'PT Root UI';
+        }
+        & button {
+            width: 16rem;
+            height: 4rem;
+            background-color: #00AEEF;
+            border-radius: 0.8rem;
+            border: none;
+            transition: background-color 0.1s;
+            &:hover {
+                background-color: #209dca;
+                transition: background-color 0.1s;
+            }
+            & a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.5rem;
+                text-decoration: none;
+                & p {
+                    color: #fff;
+                    font-size: 18px;
+                }
+
+            }
+        }
+    }
+    & .heroRight {
+        z-index: 2;
+        background-color: #ffffff3f;
+        padding: 2rem 1.5rem;
+        border-radius: 1rem;
+        border: 1px solid #ffffff96;
+        height: 28rem;
+        width: 17rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & .heroLogo {
+            width: 4rem;
+            height: 4rem;
+            background-color: #00295C0A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            & img {
+                width: auto;
+            }
+            
+        }
+        & h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            & b {
+                color: #00AEEF;
+                font-weight: 600;
+
+            }
+        }
+        & .heroLine {
+            width: 100%;
+            height: 1px;
+            background-color: #0000000e;
+        }
+    }
+}
+/* Подробнее о нашей IT-компании */
+.forUs {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding-top: 7.6rem;
+    & .forUsLeft {
+        width: 49rem;
+        height: 25rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 3rem;
+        & .forUsLeftItem {
+            width: 23.5rem;
+            height: 11rem;
+            background-color: #E2F0FB70;
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &.active {
+                background-image: url(img/punkt.jpg);
+                background-size: cover;
+                & h2, p {
+                    color: #fff;
+                }
+            }
+            & h2 {
+                font-size: 3.375rem;
+            }
+        }
+    }
+    & .forUsRight {
+        width: 47rem;
+        & h1 {
+            font-size: 4.125rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            line-height: 68px;
+        }
+        & p {
+            margin-bottom: 1rem;
+            font-weight: 100;
+            & :nth-child(2) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+/* IT услуги которые мы предоставляем */
+.service {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7.625rem;
+    padding-bottom: 7.625rem;
+    & h1 {
+        font-size: 4rem;
+    }
+    & .serviceList {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 2.5rem;
+        & .serviceItem {
+            height: auto;
+            width: 31.5rem;
+            border: #E5EDF3 solid 1px;
+            border-radius: 1rem;
+            padding: 2.5rem 2rem;
+            position: relative;
+            margin-bottom: 1.5rem;
+            & img {
+                width: auto;
+                height: 7.1875rem;
+            }
+            & h2 {
+                margin: 2rem 0 1.25rem;
+            }
+            & button {
+                width: 3.25rem;
+                height: 3.25rem;
+                position: absolute;
+                right: 2rem;
+                bottom: 2rem;
+                background-color: transparent;
+                border: #E9ECF2 1px solid;
+                border-radius: 0.5rem;
+                transition: background-color 0.1s;
+                &:hover {
+                    background-color: #DFE2EB;
+                    transition: background-color 0.1s;
+                }
+            }
+            & li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.5rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            & li::before {
+                content: "";
+                width: 0.75rem;
+                height: 0.75rem;
+                display: inline;
+                align-items: center;
+                background-repeat: no-repeat;
+                background-image: url(img/ellipse.png);
+                margin-right: 0.75rem;
+            }
+        }
+    }
+}
+/* Разработанные решения */
+.developed {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7.625rem;
+    padding-bottom: 7.625rem;
+    background-color: #F2F8FD;
+    border-radius: 1rem;
+    overflow-x: hidden;
+    & span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & h1 {
+            font-size: 4rem;
+            font-weight: 600;
+        }
+        & button {
+            width: 2.75rem ;
+            height: 2.75rem ;
+            border-radius: 50%;
+            background-color: #fff;
+            border: none;
+            &:hover svg path {
+                stroke: #209dca;
+            } 
+            &:active svg path {
+                stroke: #00AEEF;
+            } 
+        }
+    }
+    & .developedList {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: fit-content;
+        margin-top: 2.5rem;
+        transition: left 0.3s ease;
+        & .developedItem {
+            width: 48.75rem;
+            height: 32.625rem;
+            border-radius: 1rem;
+            margin-right: 2rem;
+            padding: 2.5rem 2rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-decoration: none;
+            &:hover {
+                background-size: 105%;
+                transition: background-size 0.5s;
+            }
+
+            &:first-child {
+                background-image: url(img/res1.jpg);
+            }
+            &:nth-child(2) {
+                background-image: url(img/res2.jpg);
+            }
+            &:last-child {
+                background-image: url(img/res3.jpg);
+                margin: 0;
+            }
+            & svg {
+                position: absolute;
+                right: 2rem;
+            }
+            & p {
+                color: #fff;
+                border: 1px solid #FFFFFF26;
+                border-radius: 1rem;
+                width: fit-content;
+                padding: 0.5rem 0.5rem;
+            }
+            & h2 {
+                color: #fff;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+/* Тарифы на разработку*/
+.rate {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7.625rem;
+    padding-bottom: 7.625rem;
+    & h1 {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    & .rateList {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        & .rateItem {
+            width: 32.125rem;
+            height: 23rem;
+            background-color: #fff;
+            border-radius: 1rem;
+            border: #E5EDF3 1px solid ;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            &:nth-child(1), &:nth-child(3) {
+                margin-right: 1.5rem;
+            }
+            &:nth-child(3) {
+                background-image: url(img/punkt2.jpg);
+                background-size: contain;
+                & h2, h3, p {
+                    color: #fff;
+                }
+            }
+            &:nth-child(4) {
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+                background-color: #F2F8FD;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                    & p {
+                        font-family: "PT Root UI";
+                        font-size: 0.8rem;
+                        color: #455466;
+                        line-height: 24px;
+                        letter-spacing: -0.5px;
+                        & b {
+                            color: #00AEEF;
+                        }
+                    }
+
+                & button {
+                    margin: 2rem 0;
+                    width: 16rem;
+                    height: 3.75rem;
+                    background-color: #00AEEF;
+                    border-radius: 0.5rem;
+                    border: none;
+                    transition: background-color 0.1s;
+                        &:hover {
+                            background-color: #209dca;
+                            transition: background-color 0.1s;
+                        }
+
+                    & a {
+                        height: 3.75rem;
+                        width: 16rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 1.5rem;
+                        border: none;
+                        text-decoration: none;
+                        & p {
+                            font-size: 1rem;
+                            color: #fff;
+                        }
+                    }
+                }
+                & h2 {
+                    margin-bottom: 1.5rem;
+                }
+            }
+            & h2 {
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            & img {
+                width: 10rem;
+                position: absolute;
+                bottom: 3rem;
+                right: 3rem;
+                background-color: #E2F0FB73;
+                padding: 2rem;
+                border-radius: 50%;
+            }
+            & p {
+                font-family: "PT Root UI";
+            }
+            & .features {
+                width: 70%;
+                margin: 2rem 0;
+                display: flex;
+                justify-content: space-between;
+                & span {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 4rem;
+                    & h3 {
+                        font-weight: 600;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Преимущества клиентов при работе с нами */
+.advantages {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7.625rem;
+    padding-bottom: 7.625rem;
+    & .topAdvantages {
+        display: flex;
+        justify-content: space-between;
+        & h1 {
+            font-size: 4rem;
+            width: 32.125rem;
+            font-weight: 600;
+        }
+        & .void {
+            width: 32.125rem;
+        }
+        & .advantageItem {
+            width: 32.125rem;
+            height: auto;
+            background-color: #E2F0FB73;
+            padding: 2rem;
+            border-radius: 1rem;
+            & h2 {
+                margin: 2rem 0 1.5rem;
+            }
+            & img {
+                width: 8rem;
+            }
+            & li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.5rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            & li::before {
+                content: "";
+                width: 0.75rem;
+                height: 0.75rem;
+                display: inline;
+                align-items: center;
+                background-repeat: no-repeat;
+                background-image: url(img/ellipse.png);
+                margin-right: 0.75rem;
+            }
+
+        }
+    }
+    & .centerAdvantages {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+        & .advantageItem {
+            width: 32.125rem;
+            height: auto;
+            background-color: #E2F0FB73;
+            padding: 2rem;
+            border-radius: 1rem;
+            & h2 {
+                margin: 2rem 0 1.5rem;
+            }
+            & img {
+                width: 8rem;
+            }
+            & li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.5rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            & li::before {
+                content: "";
+                width: 0.75rem;
+                height: 0.75rem;
+                display: inline;
+                align-items: center;
+                background-repeat: no-repeat;
+                background-image: url(img/ellipse.png);
+                margin-right: 0.75rem;
+            }
+
+        }
+
+    }
+    & .bottomAdvantages {
+        display: flex;
+        & .advantageItem {
+            width: 65.25rem;
+            height: auto;
+            background-color: #E2F0FB73;
+            padding: 2rem;
+            border-radius: 1rem;
+            & h2 {
+                margin: 2rem 0 1.5rem;
+            }
+            & img {
+                width: 8rem;
+            }
+            & li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.5rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            & li::before {
+                content: "";
+                width: 0.75rem;
+                height: 0.75rem;
+                display: inline;
+                align-items: center;
+                background-repeat: no-repeat;
+                background-image: url(img/ellipse.png);
+                margin-right: 0.75rem;
+            }
+
+        }
+        & span {
+            width: 33.5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        & button {
+            margin: 2rem 0;
+            width: 16rem;
+            height: 3.75rem;
+            background-color: #00AEEF;
+            border-radius: 0.5rem;
+            border: none;
+            transition: background-color 0.1s;
+                &:hover {
+                    background-color: #209dca;
+                    transition: background-color 0.1s;
+                }
+
+            & a {
+                height: 3.75rem;
+                width: 16rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1.5rem;
+                border: none;
+                text-decoration: none;
+                & p {
+                    font-size: 1rem;
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+
+}
+/* Схема работы нашей IT-компании */
+.scheme {
+    display: flex;
+    flex-direction: column;
+    background-color: #00AEEF;
+    background-image: url(img/setka.png);
+    background-size: cover;
+    border-radius: 1rem;
+    padding-top: 7.625rem;
+    padding-bottom: 7.625rem;
+    overflow-x: hidden;
+    & span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        transition: left 0.3s ease;
+        & h1 {
+            width: 35%;
+            font-size: 4rem;
+            color: #fff;
+        }
+        & p {
+            font-size: 1.5rem;
+            width: 35%;
+            color: #fff;
+        }
+        & #leftScheme, #rightScheme {
+            position: absolute;
+            top: 225%;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 1px solid #E9ECF2;
+            z-index: 99;
+            &:hover svg  {
+                stroke: #209dca;
+            }
+            &:active svg  {
+                stroke: #00AEEF;
+            }
+        }
+        & #leftScheme {
+            right: -3rem;
+        }
+        & #rightScheme {
+            left: -1.5rem;
+        }
+
+    }
+    & .schemeList  {
+        display: flex;
+        margin-top: 3rem;
+        width: fit-content;
+        position: relative;
+        & .schemeItem {
+            width: 32.125rem;
+            height: auto;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-right: 1.5rem;
+            & h2 {
+                margin: 1.25rem 0 1.25rem;
+            }
+            & p {
+                width: 75%;
+            }
+            & img {
+                width: 8rem;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+/* Технологии которые мы применяем при разработке */
+.tecnology {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7.625rem;
+    padding-bottom: 7.625rem;
+    & span {
+        width: 35.25rem;
+        & h1 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            line-height: 68px;
+            letter-spacing: -1px;
+            font-weight: 600;
+        }
+        & p {
+            font-weight: 100;
+        }
+    }
+    & .tecnologyList {
+        display: flex;
+        flex-wrap: wrap;
+        width: 59rem;
+        height: 45rem;
+        & .tecnologyItem {
+            width: 13.25rem;
+            height: 10rem;
+            background-color: #E2F0FB73;
+            margin-right: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1rem;
+            & img {
+                height: 3rem;
+                width: auto;
+            }
+        }
+    }
+}
+/* Отзывы клиентов */
+.review {
+    padding-top: 7.625rem;
+    padding-bottom: 7.625rem;
+    background-color: #E2F0FB73;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    & span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & h1 {
+            width: 50%;
+            font-size: 4rem;
+            font-weight: 600;
+            & b {
+                color: #00AEEF;
+            }
+        }
+        & button {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background-color: #fff;
+            border: none;
+            &:hover svg{
+                stroke: #209dca;
+            }
+            &:active svg{
+                stroke: #00AEEF;
+            }
+        }
+    }
+    & .reviewList {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+        & .reviewItem {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            width: 31.5rem;
+            height: 28rem;
+            background-color: #fff;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            & img {
+                width: 6rem;
+            }
+            & h2 {
+                font-weight: 600;
+            }
+            & h3 {
+                color: #00AEEF;
+            }
+            & p {
+                font-weight: 100;
+            }
+            &.show {
+                position: relative;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+}
+/* Публикуем интересное в нашем блоге */
+.blog {
+    padding-top: 7.625rem;
+    padding-bottom: 7.625rem;
+    display: flex;
+    flex-direction: column;
+    & span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & h1 {
+            width: 45%;
+            font-size: 4rem;
+            font-weight: 600;
+        }
+        & button {
+            margin: 2rem 0;
+            width: 12rem;
+            height: 3.75rem;
+            background-color: #00AEEF;
+            border-radius: 0.5rem;
+            border: none;
+            transition: background-color 0.1s;
+                &:hover {
+                    background-color: #209dca;
+                    transition: background-color 0.1s;
+                }
+
+            & a {
+                height: 3.75rem;
+                width: 12rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1.5rem;
+                border: none;
+                text-decoration: none;
+                & p {
+                    font-size: 1rem;
+                    color: #fff;
+                }
+            }
+        }
+
+    } 
+    & .blogList {
+        display: flex;
+        margin-top: 2.5rem;
+        justify-content: space-between;
+        & .blogItem {
+            width: 32.125rem;
+            background-color: transparent;
+            border: 1px solid #E9ECF2;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            & .photoBlog {
+                width: 100%;
+                height: 16.5rem;
+                background-color: #EDF4F9;
+                border-radius: 1rem;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            & h2 {
+                margin: 2rem 0 1.5rem;
+                font-weight: 600;
+                width: 75%;
+            }
+            & p b{
+                color: #00AEEF;
+            }
+            & span button {
+                background-color: transparent;
+                border: 1rem;
+                border: 1px solid #E9ECF2;
+                width: 4rem;
+                transition: background-color 0.1s;
+                &:hover {
+                    background-color: #DFE2EB;
+                    transition: background-color 0.1s;
+                }
+
+            }
+            & span p {
+                width: 75%;
+            }
+        }
+    }
+}
+/* Форма связи */
+.form {
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+    & .form2 {
+        padding-top: 7.625rem;
+        padding-bottom: 7.625rem;
+        display: flex;
+        position: relative;
+    }
+    & h1 {
+        width: 75%;
+        font-size: 4rem;
+        line-height: 62px;
+        letter-spacing: -1px;
+        font-weight: 600;
+        & b {
+            color: #00AEEF;
+        }
+    }
+    & h2 {
+        margin: 2.5rem 0 1.5rem;
+        font-weight: 600;
+    }
+    & .formList {
+        display: flex;
+        flex-direction: column;
+        & span {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            & p {
+                margin-left: 1rem;
+            }
+        }
+    }
+    & form {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 1rem;
+        & .switch {
+            position: relative;
+            display: inline-block;
+            width: 3rem;
+            height: 2rem;
+        }
+        & .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        & .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0; left: 0;
+            right: 0; bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+            border-radius: 2rem;
+        }
+        & .slider:before {
+            position: absolute;
+            content: "";
+            height: 1.5rem; width: 1.5rem;
+            left: 0.25rem;
+            bottom: 0.25rem;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+        & input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        & input:checked + .slider:before {
+            transform: translateX(1rem);
+        }
+
+        & .topForm {
+            display: flex;
+            align-items: center;
+            & h2 {
+                margin: 0;
+                width: 75%;
+                margin-left: 1rem;
+            }
+            & img {
+                height: 4rem;
+                width: 4rem;
+            }
+        }
+        & .centerForm {
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 0;
+            & input {
+                margin-bottom: 0.5rem;
+                height: 4rem;
+                padding: 1.5rem;
+                background-color: #F7F8FC;
+                border-radius: 1rem;
+                border: none;
+                font-size: 1rem;
+            }
+        }
+        & .downForm {
+            display: flex;
+            & p {
+                margin-left: 1rem;
+                width: 75%;
+            }
+            & button {
+                background-color: transparent;
+                border: none;
+                font-size: 1rem;
+                color: #00AEEF;
+            }
+        }
+        & .ok {
+            width: 100%;
+            height: 4rem;
+            background-color: #00AEEF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            font-size: 1rem;
+            border-radius: 1rem;
+            border: none;
+            margin-top: 2rem;
+            transition: background-color 0.1s;
+                &:hover {
+                    background-color: #209dca;
+                    transition: background-color 0.1s;
+                }
+
+            & p {
+                color: #fff;
+                font-weight: 700;
+            }
+        }
+    }
+    #myVideo {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 115%;
+        height: auto;
+        z-index: -1000;
+    }
+}
+/* Подвал */
+footer {
+    background-color: #F2F9FD;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    & img {
+         width: 100%;
+    }
+    & nav {
+       display: flex;
+        height: 18rem;
+       justify-content: space-between;
+       & .menuF,.serviceF,.contactF {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            & h1 {
+                font-size: 1rem;
+                font-weight: 400;
+                font-family: "PT Root UI";
+            }
+            & a {
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin-top: 1rem;
+                text-decoration: none;
+                transition: color 0.1s;
+                    &:hover {
+                        color: #6B7888;
+                        transition: color 0.1s;
+                    }
+
+            }
+        }
+        & .contactF {
+            & .mail {
+                color: #00AEEF;
+                font-size: 1.5rem;
+                font-weight: 400;
+                text-decoration: underline;
+                transition: color 0.1s;
+                &:hover {
+                    color: #209dca;
+                    transition: color 0.1s;
+                }
+
+            }
+            & a {
+                font-size: 2rem;
+            }
+            & p {
+                font-weight: 700;
+            }
+        }
+        & .socialF {
+            display: flex;
+            width: 8rem;
+            justify-content: space-between;
+            & button {
+                width: 3rem;
+                height: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #00AEEF;
+                border-radius: 50%;
+                border: none;
+                transition: background-color 0.1s;
+                &:hover {
+                    background-color: #209dca;
+                    transition: background-color 0.1s;
+                }
+
+            }
+        }
+    }
+    & .line {
+        width: 100%;
+        height: 1px;
+        background-color: #0000000D;
+        margin: 1rem 0 2rem;
+    }
+    & span {
+        display: flex;
+        justify-content: space-between;
+        & p {
+            color: #6B7888;
+        }
+        & a {
+            color: #00AEEF;
+        }
+    }
+}
