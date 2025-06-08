@@ -1,29 +1,961 @@
 @media (max-width:1600px) {
+    .headerLeft {
+    & .line {
+        margin: 0 3rem 0 2rem;
+        }
+    }
+    .headerLeft {
+        & nav {
+            width: 27.625rem;
+        }
+    }
+    .heroBlock {
+        height: 40rem;
+    }
+    .forUs {
+        & .forUsRight {
+            width: 30rem;
+        }
+    }
+    .forUs {
+        & .forUsLeft {
+            & .forUsLeftItem {
+                width: 22.5rem;
+            }
+        }
+    }
+    .service {
+    & .serviceList {
+        & .serviceItem {
+            width: 25rem;
+            }
+        }
+    }
+    .developed {
+        & .developedList {
+            & .developedItem {
+                width: 38.75rem;
+                height: 28.625rem;
+            }
+        }
+    }
+    .rate {
+        & .rateList {
+            & .rateItem {
+                &:nth-child(3) {
+                    background-size: cover;
+                }
+            }
+        }
+    }
+    .rate {
+        & .rateList {
+            & .rateItem {
+                width: 28.125rem;
+                height: 22rem;
+            }
+        }
+    }
+    .advantages {
+        & .centerAdvantages {
+            & .advantageItem {
+                width: 25.5rem;
+                height: auto;
+                background-color: #E2F0FB73;
+                padding: 2rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+    .advantages {
+        & .topAdvantages {
+            & .advantageItem {
+                width: 29.125rem;
+            }
+        }
+    }
+    .advantages {
+        & .bottomAdvantages {
+            & .advantageItem {
+                width: 52.25rem;
+                height: auto;
+                background-color: #E2F0FB73;
+                padding: 2rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+    .scheme {
+        & .schemeList {
+            & .schemeItem {
+                width: 26.125rem;
+                height: auto;
+                background-color: #fff;
+                padding: 2rem;
+                border-radius: 1rem;
+                margin-right: 1.5rem;
+            }
+        }
+    }
+    .scheme {
+        & span {
+            & h1 {
+                width: 50%;
+                font-size: 4rem;
+                color: #fff;
+            }
+        }
+    }
+    .tecnology {
+        & .tecnologyList {
+            & .tecnologyItem {
+                width: 10.25rem;
+            }
+        }
+    }
+    .tecnology {
+        & .tecnologyList {
+            width: 36rem;
+            height: 57rem;
+            & .tecnologyItem {
+                & img {
+                    height: auto;
+                    width: auto;
+                }
+            }
+        }
+    }
+    .review {
+        & .reviewList {
+            & .reviewItem {
+                width: 25.5rem;
+                height: 26rem;
+            }
+        }
+    }
+    .blog {
+        & .blogList {
+            & .blogItem {
+                width: 25.125rem;
+                background-color: transparent;
+                border: 1px solid #E9ECF2;
+                padding: 1.5rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+    .form {
+        #myVideo {
+            width: 142%;
+        }
+    }
+
+
+
+}
+@media (max-width:1440px) {
+    .heroBlock {
+        height: 35rem;
+    }
+    .heroBlock, .forUs, .service, .developed, .rate, .advantages, .scheme, .tecnology, .review, .blog, .form2, footer {
+        padding: 5.5rem 5.5rem;
+    }
+    .headerLeft {
+        padding-left: 7rem;
+    }
+    .headerRight {
+        padding-right: 7rem;
+    }
+    .forUs {
+        flex-direction: column-reverse;
+        & .forUsLeft {
+            width: 72%;
+            & .forUsLeftItem {
+                width: 26rem;
+            }
+        }
+        & .forUsRight {
+            width: 65%;
+            margin-bottom: 2rem;
+        }
+    }
+    .service {
+        & .serviceList {
+            & .serviceItem {
+                width: 36.5rem;
+            }
+        }
+    }
+    .developed {
+        & .developedList {
+            & .developedItem {
+                width: 35.75rem;
+                height: 25.625rem;
+            }
+        }
+    }
+    .rate {
+        & .rateList {
+            & .rateItem {
+                width: 24.125rem;
+                height: 25rem;
+            }
+        }
+    }
+    .advantages {
+        & .topAdvantages {
+            & .void {
+                width: 0;
+            }
+            & .advantageItem {
+                width: 57%;
+            }
+        }
+        & .centerAdvantages {
+            & .advantageItem {
+                width: 24.2rem;
+            }
+        }
+
+    }
+    .scheme {
+        & .schemeList {
+            & .schemeItem {
+                width: 24.125rem;
+            }
+        }
+    }
+    .review {
+        & .reviewList {
+            & .reviewItem {
+                width: 23.5rem;
+                height: 35rem;
+            }
+        }
+    }
+    .blog {
+        & .blogList {
+            & .blogItem {
+                width: 23.125rem;
+            }
+        }
+    }
+    .blog {
+        & span {
+            & h1 {
+                width: 60%;
+            }
+        }
+    }
+    .form {
+        #myVideo {
+            width: 165%;
+        }
+    }
     
 }
-@media (max-width:1600px) {
-    
+@media (max-width:1366px) {
+    html {
+        font-size: 14px;
+    }
+    .heroBlock {
+        & .heroLeft {
+            & h1 {
+                font-size: 3.5rem;
+                font-weight: 500;
+                line-height: 53px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+    .headerLeft {
+        & .line {
+            margin: 0px 2rem 0 2rem;
+        }
+    }
+    .service {
+        & .serviceList {
+            & .serviceItem {
+                width: 26.5rem;
+            }
+        }
+    }
+    .developed {
+        & .developedList {
+            & .developedItem {
+                width: 39.75rem;
+                height: 26.625rem;
+            }
+        }
+    }
+    .advantages {
+        & .centerAdvantages {
+            & .advantageItem {
+                width: 26.6rem;
+            }
+        }
+    }
+    .scheme {
+        & span {
+            & #leftScheme {
+                right: 4rem;
+            }
+        }
+        & span {
+        & #leftScheme, #rightScheme {
+                position: absolute;
+                top: 235%;
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                background-color: #fff;
+                border: 1px solid #E9ECF2;
+                z-index: 99;
+            }
+        }
+        & .schemeList {
+            & .schemeItem {
+                width: 26.125rem;
+            }
+        }
+
+    }
+    .review {
+        & .reviewList {
+            & .reviewItem {
+                width: 26.5rem;
+                height: 35rem;
+            }
+        }
+    }
+    .blog {
+        & .blogList {
+            & .blogItem {
+                width: 26.125rem;
+            }
+        }
+    }
+    .forUs {
+        & .forUsLeft {
+            width: 65%;
+        }
+    }
+
 }
-@media (max-width:1600px) {
-    
+@media (max-width:1280px) {
+    .heroBlock, .forUs, .service, .developed, .rate, .advantages, .scheme, .tecnology, .review, .blog, .form2, footer {
+        padding: 3.5rem 3.5rem;
+    }
+    .forUs {
+        & .forUsLeft {
+            width: 67%;
+        }
+    }
+    .heroBlock {
+        & .heroLeft {
+            & button {
+                & a {
+                    & p {
+                        color: #fff;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }
-@media (max-width:1600px) {
-    
+@media (max-width:1024px) {
+    .heroBlock {
+        & .myVideo {
+            width: 125%;
+        }
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        & .headerLeft {
+            padding-left: 0;
+        }
+        & .headerRight {
+            padding-right: 0;
+        }
+    }
+    .forUs {
+        & .forUsRight {
+            width: 100%;
+            text-align: center;
+            & h1 {
+                font-size: 3.125rem;
+                margin-bottom: 2rem;
+                font-weight: 600;
+                line-height: 52px;
+            }
+        }
+        & .forUsLeft {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    .service {
+        & .serviceList {
+            & .serviceItem {
+                width: 30rem;
+            }
+        }
+    }
+    .developed {
+        & span {
+            & h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+    .developed {
+        & .developedList {
+            & .developedItem {
+                width: 30.75rem;
+                height: 24.625rem;
+                background-position: center;
+            }
+        }
+    }
+    .rate {
+        flex-direction: column;
+        & h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            
+        }
+        & .rateList {
+            & .rateItem {
+                width: 30rem;
+                height: 25rem;
+            }
+        }
+
+    }
+    .advantages {
+        & .centerAdvantages {
+            flex-wrap: wrap;
+            & .advantageItem {
+                width: 20rem;
+                height: auto;
+            }
+            & .advantageItem {
+                & li::before {
+                    width: 1.25rem;
+                }
+            }
+
+        }
+        
+    }
+    .scheme {
+        & span {
+            align-items: flex-start;
+            flex-direction: column;
+            & h1 {
+                width: 50%;
+                font-size: 3rem;
+            }
+            & p {
+                width: 50%;
+            }
+        }
+    }
+    .scheme {
+        & .schemeList {
+            & .schemeItem {
+                width: 19.125rem;
+            }
+        }
+    }
+    .tecnology {
+        flex-direction: column;
+        & .tecnologyList {
+            width: 100%;
+            height: 34rem;
+            justify-content: space-between;
+        }
+        & span {
+            margin-bottom: 2rem;
+        }
+    }
+    .review {
+        & span {
+            & h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+    .review {
+        & .reviewList {
+            & .reviewItem {
+                width: 18.5rem;
+                height: 36rem;
+            }
+        }
+    }
+    .blog {
+        & span {
+            & h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+    .blog {
+        & .blogList {
+            & .blogItem {
+                width: 20.125rem;
+            }
+        }
+    }
+    .form {
+        & h1 {
+            font-size: 3rem;
+        }
+    }
+    .form {
+        #myVideo {
+            width: 210%;
+        }
+    }
+
+
 }
-@media (max-width:1600px) {
-    
+@media (max-width:800px) {
+    html {
+        font-size: 12px;
+    }
+    .heroBlock {
+        & .myVideo {
+            width: 140%;
+            right: -10rem;
+        }
+    }
+    .heroBlock {
+        & .heroLeft {
+            & h1 {
+                font-size: 3rem;
+                font-weight: 500;
+                line-height: 3rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
+    .headerLeft {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        & nav {
+            width: 100%;
+            justify-content: space-evenly;
+            margin: 1rem 0;
+        }
+    }
+    .service {
+        & .serviceList {
+            & .serviceItem {
+                width: 27rem;
+            }
+        }
+    }
+    .developed {
+        & .developedList {
+            & .developedItem {
+                width: 27rem;
+                height: 25rem;
+                background-position: center;
+            }
+        }
+    }
+    .rate {
+        & .rateList {
+            & .rateItem {
+                width: 27rem;
+                height: 25rem;
+            }
+        }
+    }
+    .rate {
+        & .rateList {
+            & .rateItem {
+                &:nth-child(4) {
+                    & p {
+                        line-height: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .advantages {
+        & .topAdvantages {
+            & h1 {
+                font-size: 3rem;
+                width: 50%;
+            }
+        }
+    }
+    .advantages {
+        & .centerAdvantages {
+            & .advantageItem {
+                width: 27.2rem;
+                height: auto;
+                &:last-child {
+                    margin-top: 1rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .advantages {
+        & .bottomAdvantages {
+            & .advantageItem {
+                width: 35rem;
+            }
+        }
+    }
+    .scheme {
+        & span {
+            & #leftScheme, #rightScheme {
+                top: 205%;
+            }
+        }
+    }
+    .scheme {
+        & .schemeList {
+            & .schemeItem {
+                width: 18rem;
+            }
+        }
+    }
+    .scheme {
+        & .schemeList {
+            & .schemeItem {
+                & p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .scheme {
+        & .schemeList {
+            & .schemeItem {
+                & img {
+                    width: 6rem;
+                }
+            }
+        }
+    }
+    .tecnology {
+        & span {
+            width: 100%;
+            & h1 {
+                font-size: 3rem;
+                margin-bottom: 2rem;
+                line-height: 48px;
+                letter-spacing: -1px;
+                font-weight: 600;
+            }
+        }
+        & .tecnologyList {
+            width: 100%;
+            height: 45rem;
+        }
+    }
+    .tecnology {
+        & .tecnologyList {
+            & .tecnologyItem {
+                width: 22%;
+            }
+        }
+    }
+    .review {
+        & .reviewList {
+            & .reviewItem {
+                width: 48%;
+                height: 36rem;
+            }
+        }
+    }
+    .blog {
+        & .blogList {
+            & .blogItem {
+                width: 48%;
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .form {
+        & form {
+            & .ok {
+                & p {
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+    .form {
+        & h1 {
+            width: 90%;
+            line-height: 42px;
+        }
+    }
+
 }
-@media (max-width:1600px) {
-    
+@media (max-width:768px) {
+    .service {
+        & .serviceList {
+            & .serviceItem {
+                width: 26rem;
+            }
+        }
+    }
+    .rate {
+        & .rateList {
+            & .rateItem {
+                width: 25rem;
+                height: 25rem;
+            }
+        }
+    }
+    .advantages {
+        & .centerAdvantages {
+            & .advantageItem {
+                width: 26rem;
+                height: auto;
+            }
+        }
+    }
+    .scheme {
+        & .schemeList {
+            & .schemeItem {
+                margin-right: 1rem;
+            }
+        }
+    }
+    .form {
+        #myVideo {
+            width: 240%;
+        }
+    }
+
 }
-@media (max-width:1600px) {
-    
+@media (max-width:425px) {
+    html {
+        font-size: 10px;
+    }
+    .heroBlock, .forUs, .service, .developed, .rate, .advantages, .scheme, .tecnology, .review, .blog, .form2, footer {
+        padding: 2.5rem 2.5rem;
+    }
+    .headerLeft {
+        & nav {
+            & a {
+                font-weight: 400;
+            }
+        }
+    }
+    .heroBlock {
+        flex-direction: column;
+        height: auto;
+    }
+    .heroBlock {
+        & .heroRight {
+            height: auto;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    .heroBlock {
+        & .myVideo {
+            width: 265%;
+            right: -35rem;
+        }
+    }
+    .heroBlock {
+        & .heroRight {
+            width: auto;
+            margin-top: 2rem;
+            & .heroLine {
+                width: 1px ;
+                height: 100%;
+                background-color: #E9ECF2;
+            }
+            & .heroRightTop, .heroRightBottom {
+                width: 45%;
+            }
+        }
+    }
+
+    .forUs {
+        & .forUsLeft {
+            height: auto;
+            & .forUsLeftItem {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .service {
+        & .serviceList {
+            & .serviceItem {
+                width: 100%;
+            }
+        }
+    }
+    .developed {
+        & .developedList {
+            & .developedItem {
+                width: 20rem;
+                height: 20rem;
+                background-position: inherit;
+                background-size: cover;
+            }
+        }
+    }
+    .developed {
+        & .developedList {
+            & .developedItem {
+                & h2 {
+                    color: #fff;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .rate {
+        & .rateList {
+            & .rateItem {
+                width: 100%;
+                &:nth-child(3) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .advantages {
+        & .topAdvantages {
+            flex-direction: column;
+            & .advantageItem {
+                width: 100%;
+            }
+            & h1 {
+                font-size: 3rem;
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+
+        }
+    }
+    .advantages {
+        & .centerAdvantages {
+            & .advantageItem {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .advantages {
+        & .bottomAdvantages {
+            flex-direction: column;
+            align-items: center;
+            & .advantageItem {
+                width: 100%;
+            }
+        }
+    }
+    .scheme {
+        & span {
+            & h1 {
+                width: 100%;
+            }
+            & p {
+                width: 100%;
+            }
+            & #leftScheme, #rightScheme {
+                top: 215%;
+            }
+            & #leftScheme {
+                right: 5rem;
+            }
+        }
+    }
+    .tecnology {
+        & .tecnologyList {
+            
+            flex-direction: column;
+            height: 78rem;
+            & .tecnologyItem {
+                width: 50%;
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+        & span {
+            & h1 {
+                line-height: 32px;
+            }
+        }   
+    }
+    .blog {
+        & .blogList {
+            & .blogItem {
+                & h2 {
+                    width: 100%;
+                }
+                & .photoBlog {
+                    width: 100%;
+                    height: 11.5rem;
+                }
+            }
+        }
+    }
+
+    .form {
+        & .form2 {
+            flex-direction: column;
+            & form {
+                margin-top: 2rem;
+            }
+        }
+        #myVideo {
+            width: 1000%;
+        }
+    }
+
+    footer {
+        & nav {
+            height: auto;
+            flex-wrap: wrap;
+            & .socialF {
+                margin-top: 1rem;
+            }
+            & .contactF {
+                margin: 1rem 0;
+            }
+        }
+    }
+    .blog {
+        & span {
+            align-items: flex-end;
+            & button {
+                margin: 0;
+            }
+        }
+    }
+
+
+
 }
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
+@media (max-width:375px) {
+    html {
+        padding: 1rem;
+        font-size: 8px;
+    }
 }
 @media (max-width:1600px) {
     

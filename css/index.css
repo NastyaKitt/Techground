@@ -21,6 +21,7 @@
 }
 html {
     padding: 2rem;
+    font-size: 16px;
 }
 button {
     cursor: pointer;
@@ -423,6 +424,7 @@ header {
             display: flex;
             flex-direction: column;
             position: relative;
+            background-size: cover;
             &:nth-child(1), &:nth-child(3) {
                 margin-right: 1.5rem;
             }
