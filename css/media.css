@@ -880,7 +880,7 @@
                 top: 215%;
             }
             & #leftScheme {
-                right: 5rem;
+                right: -1.5rem;
             }
         }
     }
@@ -956,6 +956,84 @@
         padding: 1rem;
         font-size: 8px;
     }
+    .headerLeft {
+        & nav {
+            width: 75%;
+            flex-wrap: wrap;
+        }
+    }
+    & .headerRight {
+        width: 88%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .forUs {
+        & .forUsRight {
+            & h1 {
+                font-size: 3.125rem;
+                margin-bottom: 2rem;
+                font-weight: 600;
+                line-height: 32px;
+            }
+        }
+    }
+    .service {
+        & .serviceList {
+            & .serviceItem {
+                & li::before {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+    .advantages {
+        & .centerAdvantages {
+            & .advantageItem {
+                & li::before {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+    .advantages {
+        & .topAdvantages {
+            & .advantageItem {
+                & li::before {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+    .advantages {
+        & .bottomAdvantages {
+            & .advantageItem {
+                & li::before {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+    .developed {
+        & .developedList {
+            & .developedItem {
+                & svg {
+                    width: 2rem;
+                }
+                & h2 {
+                    width: 85%;
+                }
+            }
+        }
+    }
+
+
 }
 @media (max-width:1600px) {
     

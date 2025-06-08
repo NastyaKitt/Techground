@@ -348,6 +348,10 @@ header {
             } 
         }
     }
+    & .developedScroll {
+        overflow-x: scroll;
+        width: 100%;
+    }
     & .developedList {
         position: relative;
         display: flex;
@@ -731,6 +735,10 @@ header {
             left: -1.5rem;
         }
 
+    }
+    & .schemeScroll {
+        overflow-x: scroll;
+        width: 100%;
     }
     & .schemeList  {
         display: flex;
