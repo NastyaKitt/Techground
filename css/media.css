@@ -947,6 +947,17 @@
             }
         }
     }
+    .scheme {
+        & .schemeScroll {
+            overflow-x: scroll;
+        }
+    }
+    .developed {
+        & .developedScroll {
+            overflow-x: scroll;
+        }
+    }
+
 
 
 

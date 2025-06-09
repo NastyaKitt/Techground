@@ -349,7 +349,7 @@ header {
         }
     }
     & .developedScroll {
-        overflow-x: scroll;
+        overflow-x: hidden;
         width: 100%;
     }
     & .developedList {
@@ -737,7 +737,7 @@ header {
 
     }
     & .schemeScroll {
-        overflow-x: scroll;
+        overflow-x: hidden;
         width: 100%;
     }
     & .schemeList  {
@@ -745,6 +745,7 @@ header {
         margin-top: 3rem;
         width: fit-content;
         position: relative;
+        transition: left 0.3s ease;
         & .schemeItem {
             width: 32.125rem;
             height: auto;
