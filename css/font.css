@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Proba Pro';
+    src: url('ProbaPro-Light.eot');
+    src: local('Proba Pro Light'), local('ProbaPro-Light'),
+        url('font/ProbaPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('font/ProbaPro-Light.woff2') format('woff2'),
+        url('font/ProbaPro-Light.woff') format('woff'),
+        url('font/ProbaPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proba Pro';
+    src: url('ProbaPro-SemiBoldItalic.eot');
+    src: local('Proba Pro SemiBold Italic'), local('ProbaPro-SemiBoldItalic'),
+        url('font/ProbaPro-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('font/ProbaPro-SemiBoldItalic.woff2') format('woff2'),
+        url('font/ProbaPro-SemiBoldItalic.woff') format('woff'),
+        url('font/ProbaPro-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proba Pro';
+    src: url('ProbaPro-ExtraLight.eot');
+    src: local('Proba Pro ExtraLight'), local('ProbaPro-ExtraLight'),
+        url('font/font/ProbaPro-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('font/font/ProbaPro-ExtraLight.woff2') format('woff2'),
+        url('font/font/ProbaPro-ExtraLight.woff') format('woff'),
+        url('font/font/ProbaPro-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proba Pro';
+    src: url('ProbaPro-Bold.eot');
+    src: local('Proba Pro Bold'), local('ProbaPro-Bold'),
+        url('font/ProbaPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/ProbaPro-Bold.woff2') format('woff2'),
+        url('font/ProbaPro-Bold.woff') format('woff'),
+        url('font/ProbaPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proba Pro';
+    src: url('ProbaPro-Medium.eot');
+    src: local('Proba Pro Medium'), local('ProbaPro-Medium'),
+        url('font/ProbaPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/ProbaPro-Medium.woff2') format('woff2'),
+        url('font/ProbaPro-Medium.woff') format('woff'),
+        url('font/ProbaPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proba Pro';
+    src: url('ProbaPro-Thin.eot');
+    src: local('Proba Pro Thin'), local('ProbaPro-Thin'),
+        url('font/ProbaPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('font/ProbaPro-Thin.woff2') format('woff2'),
+        url('font/ProbaPro-Thin.woff') format('woff'),
+        url('font/ProbaPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proba Pro';
+    src: url('ProbaPro-ExtraLightItalic.eot');
+    src: local('Proba Pro ExtraLight Italic'), local('ProbaPro-ExtraLightItalic'),
+        url('font/ProbaPro-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('font/ProbaPro-ExtraLightItalic.woff2') format('woff2'),
+        url('font/ProbaPro-ExtraLightItalic.woff') format('woff'),
+        url('font/ProbaPro-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proba Pro';
+    src: url('ProbaPro-SemiBold.eot');
+    src: local('Proba Pro SemiBold'), local('ProbaPro-SemiBold'),
+        url('font/ProbaPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('font/ProbaPro-SemiBold.woff2') format('woff2'),
+        url('font/ProbaPro-SemiBold.woff') format('woff'),
+        url('font/ProbaPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proba Pro';
+    src: url('ProbaPro-MediumItalic.eot');
+    src: local('Proba Pro Medium Italic'), local('ProbaPro-MediumItalic'),
+        url('font/ProbaPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('font/ProbaPro-MediumItalic.woff2') format('woff2'),
+        url('font/ProbaPro-MediumItalic.woff') format('woff'),
+        url('font/ProbaPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proba Pro';
+    src: url('ProbaPro-BoldItalic.eot');
+    src: local('Proba Pro Bold Italic'), local('ProbaPro-BoldItalic'),
+        url('font/ProbaPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('font/ProbaPro-BoldItalic.woff2') format('woff2'),
+        url('font/ProbaPro-BoldItalic.woff') format('woff'),
+        url('font/ProbaPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proba Pro';
+    src: url('ProbaPro-LightItalic.eot');
+    src: local('Proba Pro Light Italic'), local('ProbaPro-LightItalic'),
+        url('font/ProbaPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('font/ProbaPro-LightItalic.woff2') format('woff2'),
+        url('font/ProbaPro-LightItalic.woff') format('woff'),
+        url('font/ProbaPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proba Pro';
+    src: url('ProbaPro-ThinItalic.eot');
+    src: local('Proba Pro Thin Italic'), local('ProbaPro-ThinItalic'),
+        url('font/ProbaPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('font/ProbaPro-ThinItalic.woff2') format('woff2'),
+        url('font/ProbaPro-ThinItalic.woff') format('woff'),
+        url('font/ProbaPro-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proba Pro';
+    src: url('ProbaPro-Regular.eot');
+    src: local('Proba Pro Regular'), local('ProbaPro-Regular'),
+        url('font/ProbaPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/ProbaPro-Regular.woff2') format('woff2'),
+        url('font/ProbaPro-Regular.woff') format('woff'),
+        url('font/ProbaPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proba Pro';
+    src: url('ProbaPro-Italic.eot');
+    src: local('Proba Pro Italic'), local('ProbaPro-Italic'),
+        url('font/ProbaPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('font/ProbaPro-Italic.woff2') format('woff2'),
+        url('font/ProbaPro-Italic.woff') format('woff'),
+        url('font/ProbaPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: url('font/PT-Root-UI_Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: url('font/PT-Root-UI_Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: url('font/PT-Root-UI_Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: url('font/PT-Root-UI_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: url('font/PT-Root-UI_VF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

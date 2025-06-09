@@ -295,31 +295,6 @@
             }
         }
     }
-    .scheme {
-        & span {
-            & #leftScheme {
-                right: 4rem;
-            }
-        }
-        & span {
-        & #leftScheme, #rightScheme {
-                position: absolute;
-                top: 235%;
-                width: 3rem;
-                height: 3rem;
-                border-radius: 50%;
-                background-color: #fff;
-                border: 1px solid #E9ECF2;
-                z-index: 99;
-            }
-        }
-        & .schemeList {
-            & .schemeItem {
-                width: 26.125rem;
-            }
-        }
-
-    }
     .review {
         & .reviewList {
             & .reviewItem {
@@ -616,13 +591,6 @@
         }
     }
     .scheme {
-        & span {
-            & #leftScheme, #rightScheme {
-                top: 205%;
-            }
-        }
-    }
-    .scheme {
         & .schemeList {
             & .schemeItem {
                 width: 18rem;
@@ -716,12 +684,28 @@
     }
     .rate {
         & .rateList {
+            width: 100%;
             & .rateItem {
                 width: 25rem;
                 height: 25rem;
             }
         }
     }
+    .review {
+        & .reviewList {
+            & .reviewItem {
+                height: 29rem;
+            }
+        }
+    }
+    footer {
+        & nav {
+            height: auto;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+    }
+
     .advantages {
         & .centerAdvantages {
             & .advantageItem {
@@ -753,16 +737,132 @@
     }
     .headerLeft {
         & nav {
+            flex-wrap: wrap;
+            width: 70%;
+            justify-content: space-evenly;
             & a {
                 font-weight: 400;
             }
         }
     }
     .heroBlock {
+        & .heroLeft {
+            & p {
+                font-size: 1.25rem;
+            }
+
+            & button {
+                width: 100%;
+            }
+        }
+    }
+    .service {
+        & .serviceList {
+            & .serviceItem {
+                & li {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+    .service {
+        & .serviceList {
+            & .serviceItem {
+                & li::before {
+                    width: 1rem;
+                    height: 1rem;
+                }
+            }
+        }
+    }
+    .rate {
+        & .rateList {
+            & .rateItem {
+                & p {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+    .rate {
+        & .rateList {
+            & .rateItem {
+                & .features {
+                    width: 95%;
+                }
+                &:nth-child(4) {
+                    & p {
+                        font-size: 1.25rem;
+                    }
+                }
+
+            }
+        }
+    }
+    .advantages {
+        & .advantageItem {
+            & li {
+                font-size: 1.25rem;
+            }
+        }
+    }
+    .advantages {
+        & .advantageItem {
+            & li::before {
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+    }
+    .advantages {
+        & .bottomAdvantages {
+            & span {
+                width: 100%;
+            }
+            & button {
+                width: 100%;
+                & p {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+    .scheme {
+        & span {
+            & .rightScheme, .leftScheme {
+                top: 28rem;
+            }
+        }
+    }
+    .tecnology {
+        & span {
+            & p {
+                font-size: 1.25rem;
+            }
+        }
+    }
+    .form {
+        & h1 {
+            line-height: 30px;
+        }
+    }
+    .popup {
+        justify-content: start;
+        width: auto;
+        & form {
+            width: 95%;
+        }
+    }
+
+
+    .heroBlock {
         flex-direction: column;
         height: auto;
     }
     .heroBlock {
+        & .myVideo {
+            top: 0;
+        }
         & .heroRight {
             height: auto;
             width: 100%;
@@ -876,12 +976,6 @@
             & p {
                 width: 100%;
             }
-            & #leftScheme, #rightScheme {
-                top: 215%;
-            }
-            & #leftScheme {
-                right: -1.5rem;
-            }
         }
     }
     .tecnology {
@@ -947,20 +1041,6 @@
             }
         }
     }
-    .scheme {
-        & .schemeScroll {
-            overflow-x: scroll;
-        }
-    }
-    .developed {
-        & .developedScroll {
-            overflow-x: scroll;
-        }
-    }
-
-
-
-
 }
 @media (max-width:375px) {
     html {
@@ -973,6 +1053,42 @@
             flex-wrap: wrap;
         }
     }
+    .heroBlock {
+        & .heroLeft {
+            & button {
+                & p {
+                    color: #fff;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .rate {
+        & .rateList {
+            & .rateItem {
+                &:nth-child(4) {
+                    & button {
+                        & p {
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .advantages {
+        & .bottomAdvantages {
+            & button {
+                & p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
     & .headerRight {
         width: 88%;
         display: flex;
@@ -1093,9 +1209,6 @@
         }
     }
     .developed {
-        & span button {
-            display: none;
-        }
         & .developedList {
             & .developedItem {
                 width: 30rem;
@@ -1211,7 +1324,7 @@
             & .buttons {
                 width: 75%;
                 display: flex;
-                margin-top: 1rem;
+                margin-top: 5rem;
                 justify-content: space-between;
                 & button {
                     width: 5rem;
@@ -1223,9 +1336,16 @@
             }
         }
     }
+    .headerRight {
+        & button {
+            height: 5rem;
+            width: 5rem;
+        }
+    }
+
+
     .review {
         & .reviewList {
-            flex-direction: column;
             align-items: center;
             & .reviewItem {
                 width: 100%;
@@ -1294,11 +1414,28 @@
             }
         }
     }
-
-
-
-
-
-
+    footer {
+        & nav {
+            & .socialF {
+                & button {
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
+        }
+    }
+    footer {
+        & nav {
+            & .downF {
+                justify-content: space-between;
+                width: 130%;
+            }
+        }
+    }
+    .headerLeft {
+        & nav {
+            width: 65%;
+        }
+    }
 
 }
