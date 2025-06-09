@@ -959,8 +959,11 @@ header {
                 height: 16.5rem;
                 background-color: #EDF4F9;
                 border-radius: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 & img {
-                    width: 100%;
+                    width: auto;
                     height: 100%;
                 }
             }
