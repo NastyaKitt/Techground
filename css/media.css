@@ -872,7 +872,7 @@
     }
     .heroBlock {
         & .myVideo {
-            width: 265%;
+            width: 375%;
             right: -35rem;
         }
     }
@@ -1219,6 +1219,7 @@
     .heroBlock {
         & .myVideo {
             top: 0;
+            width: 275%;
         }
     }
     .rate {
