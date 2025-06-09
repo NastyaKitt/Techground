@@ -1273,6 +1273,16 @@
 
         }
     }
+    .tecnology {
+        & .tecnologyList {
+            & .tecnologyItem {
+                & img {
+                    height: 5rem;
+                    width: auto;
+                }
+            }
+        }
+    }
 
 
 
@@ -1280,76 +1290,4 @@
 
 
 
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
-}
-@media (max-width:1600px) {
-    
 }
