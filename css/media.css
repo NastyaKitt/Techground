@@ -1032,6 +1032,252 @@
             }
         }
     }
+    .headerLeft {
+        & nav {
+            & a {
+                font-size: 2rem;
+            }
+        }
+    }
+    .headerRight {
+        & a {
+            &:first-child {
+                color: #00AEEF;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .heroBlock {
+        & .heroLeft {
+            text-align: center;
+            & p {
+                margin: 2rem 0;
+                font-family: 'PT Root UI';
+                font-size: 1.5rem;
+            }
+            & button {
+                width: 100%;
+            }
+        }
+    }
+    .forUs {
+        & .forUsRight {
+            text-align: left;
+            & p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .service {
+        & .serviceList {
+            & .serviceItem {
+                & h2 {
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+                & li {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .developed {
+        & span button {
+            display: none;
+        }
+        & .developedList {
+            & .developedItem {
+                width: 30rem;
+                height: 22rem;
+            }
+        }
+    }
+    .heroBlock {
+        & .myVideo {
+            top: 0;
+        }
+    }
+    .rate {
+        & .rateList {
+            & .rateItem {
+                & p {
+                    font-family: "PT Root UI";
+                    font-size: 1.5rem;
+                }
+                & .features {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .rate {
+        & .rateList {
+            & .rateItem {
+                &:nth-child(4) {
+                    height: auto;
+                    & button {
+                        width: 100%;
+                        & a {
+                            width: 100%;
+                            & p {
+                                font-size: 1.5rem;
+                            }
+                        
+                        }
+                        
+                    }
+                    & p {
+                        line-height: 2rem;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    .advantages {
+            & .advantageItem {
+                & h2 {
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+                & li {
+                    font-size: 1.5rem;
+                }
+            }
+    }
+    .advantages {
+        & .bottomAdvantages {
+            & span {
+                width: 100%;
+                & button {
+                    width: 100%;
+                    & a {
+                        width: 100%;
+                        & p {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .scheme {
+        & span {
+            & button {
+                display: none;
+            }
+            
+        }
+        & .schemeList {
+            & .schemeItem {
+                width: 30rem;
+                & h2 {
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+                & p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+    }
+    .tecnology {
+        & span {
+            & p {
+                font-weight: 100;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .review {
+        & span {
+            flex-direction: column;
+            width: 100%;
+            & h1 {
+                width: 100%;
+            }
+            & .buttons {
+                width: 75%;
+                display: flex;
+                margin-top: 1rem;
+                justify-content: space-between;
+                & button {
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    border: none;
+                }
+            }
+        }
+    }
+    .review {
+        & .reviewList {
+            flex-direction: column;
+            align-items: center;
+            & .reviewItem {
+                width: 100%;
+                height: 36rem;
+                margin-bottom: 1rem;
+                & p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .blog {
+        & .blogList {
+            flex-direction: column;
+            align-items: center;
+            & .blogItem {
+                width: 100%;
+                margin-bottom: 1rem;
+                &:last-child {
+                    display: block;
+                }
+                & span p {
+                    width: 75%;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .form {
+        & h1 {
+            width: 90%;
+            line-height: 3rem;
+        }
+        & h2 {
+            font-size: 2rem;
+        }
+        & .formList {
+            & span {
+                & p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        & form {
+            & .centerForm {
+                & input {
+                    height: 5rem;
+                    font-size: 1.5rem;
+                }
+            }
+            & .ok {
+                & p {
+                    font-size: 1.5rem;
+                }
+            }
+
+        }
+    }
+
+
+
+
+
 
 
 }

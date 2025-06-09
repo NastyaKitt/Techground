@@ -857,7 +857,6 @@ header {
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            padding: 2.5rem 2rem;
             text-align: center;
             & img {
                 width: 6rem;
@@ -875,6 +874,8 @@ header {
                 position: relative;
                 opacity: 1;
                 visibility: visible;
+                padding: 2.5rem 2rem;
+
             }
         }
     }
