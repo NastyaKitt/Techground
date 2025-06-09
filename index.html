@@ -5,12 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TECHGRAD SOLUTIONS</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
+    <div class="popup" id="popup">
+        <form action="" method="post">
+            <button id="clsPopup" type="button">
+                <svg fill="#000000" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.8,16l5.5-5.5c0.8-0.8,0.8-2,0-2.8l0,0C24,7.3,23.5,7,23,7c-0.5,0-1,0.2-1.4,0.6L16,13.2l-5.5-5.5 c-0.8-0.8-2.1-0.8-2.8,0C7.3,8,7,8.5,7,9.1s0.2,1,0.6,1.4l5.5,5.5l-5.5,5.5C7.3,21.9,7,22.4,7,23c0,0.5,0.2,1,0.6,1.4 C8,24.8,8.5,25,9,25c0.5,0,1-0.2,1.4-0.6l5.5-5.5l5.5,5.5c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L18.8,16z"></path> </g></svg>
+            </button>
+            <div class="topForm">
+                <img src="css/img/icona.png" alt="">
+                <h2>Заполните форму, и наш менеджер свяжется с вами в ближайшее время</h2>
+            </div>
+            <div class="centerForm">
+                <input type="text" name="name" placeholder="Ваше ФИО">
+                <input type="tel" name="number" placeholder="Номер телефона">
+                <input type="text" name="mail" placeholder="Ваш E-mail">
+                <input type="text" name="company" placeholder="Название компании">
+            </div>
+            <div class="downForm">
+                <label class="switch">
+                    <input type="checkbox" id="myToggle" />
+                    <span class="slider"></span>
+                </label>
+                <p>Нажимая на кнопку «Отправить заявку» вы соглашаетесь с <button type="button">положением об обработке персональных данных</button></p>
+            </div>
+            <button type="submit" class="ok">
+                <p>Отправить заявку</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none">
+                    <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM20.5303 6.53033C20.8232 6.23744 20.8232 5.76256 20.5303 5.46967L15.7574 0.696698C15.4645 0.403804 14.9896 0.403805 14.6967 0.696698C14.4038 0.989591 14.4038 1.46446 14.6967 1.75736L18.9393 6L14.6967 10.2426C14.4038 10.5355 14.4038 11.0104 14.6967 11.3033C14.9896 11.5962 15.4645 11.5962 15.7574 11.3033L20.5303 6.53033ZM1 6L1 6.75L20 6.75L20 6L20 5.25L1 5.25L1 6Z" fill="white"/>
+                </svg>
+            </button>
+        </form>
+    </div>
     <header>
         <div class="headerLeft">
-            <div class="logo"><img src="css/img/Logo.png" alt="TECHGRAD SOLUTIONS"></div>
+            <div class="logo"><a href="#"><img src="css/img/Logo.png" alt="TECHGRAD SOLUTIONS"></a></div>
             <div class="line"></div>
             <nav>
                 <a href="#">Услуги</a>
@@ -37,12 +70,12 @@
             <div class="heroLeft">
                 <h1>Создаём <b>эффективные <br>IT решения</b> для вашего <br>бизнеса</h1>
                 <p>Помогаем достигать бизнес-целей с помощью современных IT-решений: <br>корпоративных сайтов, Highload и интранет-систем, ИИ и ПО</p>
-                <button><a href="#">
+                <button class="callPopup">
                     <p>Связаться с нами</p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none">
                     <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM20.5303 6.53033C20.8232 6.23744 20.8232 5.76256 20.5303 5.46967L15.7574 0.696698C15.4645 0.403804 14.9896 0.403805 14.6967 0.696698C14.4038 0.989591 14.4038 1.46446 14.6967 1.75736L18.9393 6L14.6967 10.2426C14.4038 10.5355 14.4038 11.0104 14.6967 11.3033C14.9896 11.5962 15.4645 11.5962 15.7574 11.3033L20.5303 6.53033ZM1 6L1 6.75L20 6.75L20 6L20 5.25L1 5.25L1 6Z" fill="white"/>
                     </svg>
-                </a></button>
+                </button>
             </div>
             <div class="heroRight">
                 <div class="heroRightTop">
@@ -192,12 +225,12 @@
             <span>
                 <h1>Разработанные решения</h1>
                 <div class="buttons">
-                    <button id="leftDev">
+                    <button class="leftDev swiper-button-prev">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12" fill="none">
                         <path d="M16 5.3C16.3866 5.3 16.7 5.6134 16.7 6C16.7 6.3866 16.3866 6.7 16 6.7L16 5.3ZM0.505024 6.49498C0.231657 6.22161 0.231657 5.77839 0.505024 5.50503L4.9598 1.05025C5.23316 0.776886 5.67638 0.776886 5.94975 1.05025C6.22311 1.32362 6.22311 1.76684 5.94975 2.0402L1.98995 6L5.94975 9.9598C6.22311 10.2332 6.22311 10.6764 5.94975 10.9497C5.67638 11.2231 5.23316 11.2231 4.9598 10.9497L0.505024 6.49498ZM16 6L16 6.7L0.999999 6.7L0.999999 6L0.999999 5.3L16 5.3L16 6Z" fill="#D8D8D8"/>
                         </svg>
                     </button>
-                    <button id="rightDev">
+                    <button class="rightDev swiper-button-next">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12" fill="none">
                         <path d="M1 5.3C0.613401 5.3 0.3 5.6134 0.3 6C0.3 6.3866 0.613401 6.7 1 6.7L1 5.3ZM16.495 6.49498C16.7683 6.22161 16.7683 5.77839 16.495 5.50503L12.0402 1.05025C11.7668 0.776886 11.3236 0.776886 11.0503 1.05025C10.7769 1.32362 10.7769 1.76684 11.0503 2.0402L15.0101 6L11.0503 9.9598C10.7769 10.2332 10.7769 10.6764 11.0503 10.9497C11.3236 11.2231 11.7668 11.2231 12.0402 10.9497L16.495 6.49498ZM1 6L1 6.7L16 6.7L16 6L16 5.3L1 5.3L1 6Z" fill="#D8D8D8"/>
                         </svg>
@@ -205,8 +238,8 @@
                 </div>
             </span>
             <div class="developedScroll">
-                <div class="developedList">
-                    <a href="" class="developedItem">
+                <div class="developedList swiper-wrapper">
+                    <a href="" class="developedItem swiper-slide">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                             <path d="M0.932504 21.9393C0.346717 22.5251 0.346717 23.4749 0.932504 24.0607C1.51829 24.6464 2.46804 24.6464 3.05382 24.0607L0.932504 21.9393ZM24.4932 2C24.4932 1.17157 23.8216 0.500001 22.9932 0.500001L9.49316 0.5C8.66474 0.5 7.99316 1.17157 7.99316 2C7.99316 2.82843 8.66474 3.5 9.49316 3.5H21.4932V15.5C21.4932 16.3284 22.1647 17 22.9932 17C23.8216 17 24.4932 16.3284 24.4932 15.5L24.4932 2ZM1.99316 23L3.05382 24.0607L24.0538 3.06066L22.9932 2L21.9325 0.93934L0.932504 21.9393L1.99316 23Z" fill="white"/>
                         </svg>
@@ -216,7 +249,7 @@
                         </h2>
                         <p>Программы и разработка 1С</p>
                     </a>                
-                    <a href="" class="developedItem">
+                    <a href="" class="developedItem swiper-slide">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                         <path d="M0.932504 21.9393C0.346717 22.5251 0.346717 23.4749 0.932504 24.0607C1.51829 24.6464 2.46804 24.6464 3.05382 24.0607L0.932504 21.9393ZM24.4932 2C24.4932 1.17157 23.8216 0.500001 22.9932 0.500001L9.49316 0.5C8.66474 0.5 7.99316 1.17157 7.99316 2C7.99316 2.82843 8.66474 3.5 9.49316 3.5H21.4932V15.5C21.4932 16.3284 22.1647 17 22.9932 17C23.8216 17 24.4932 16.3284 24.4932 15.5L24.4932 2ZM1.99316 23L3.05382 24.0607L24.0538 3.06066L22.9932 2L21.9325 0.93934L0.932504 21.9393L1.99316 23Z" fill="white"/>
                         </svg>
@@ -225,7 +258,7 @@
                         </h2>
                         <p>Программы и разработка 1С</p>
                     </a>                
-                    <a href="" class="developedItem">
+                    <a href="" class="developedItem swiper-slide">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                         <path d="M0.932504 21.9393C0.346717 22.5251 0.346717 23.4749 0.932504 24.0607C1.51829 24.6464 2.46804 24.6464 3.05382 24.0607L0.932504 21.9393ZM24.4932 2C24.4932 1.17157 23.8216 0.500001 22.9932 0.500001L9.49316 0.5C8.66474 0.5 7.99316 1.17157 7.99316 2C7.99316 2.82843 8.66474 3.5 9.49316 3.5H21.4932V15.5C21.4932 16.3284 22.1647 17 22.9932 17C23.8216 17 24.4932 16.3284 24.4932 15.5L24.4932 2ZM1.99316 23L3.05382 24.0607L24.0538 3.06066L22.9932 2L21.9325 0.93934L0.932504 21.9393L1.99316 23Z" fill="white"/>
                         </svg>
@@ -253,7 +286,7 @@
                     </div>
                     <span>
                         <p>Стоимость:</p>
-                        <h2>50 000 ₽</h2>
+                        <h4>50 000</h4>
                     </span>
                 </div>
                 <div class="rateItem">
@@ -271,7 +304,7 @@
                     </div>
                     <span>
                         <p>Стоимость:</p>
-                        <h2>80 000 ₽</h2>
+                        <h4>80 000</h4>
                     </span>
                 </div>
                 <div class="rateItem">
@@ -289,18 +322,18 @@
                     </div>
                     <span>
                         <p>Стоимость:</p>
-                        <h2>120 000 ₽</h2>
+                        <h4>120 000</h4>
                     </span>
                 </div>
                 <div class="rateItem">
                     <h2>Нужна помощь с выбором?</h2>
                     <p>Свяжитесь с нами и мы поможем вам подобрать подходящий тариф под потребности вашего бизнеса!</p>
-                    <button><a href="#">
+                    <button class="callPopup">
                         <p>Связаться с нами</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none">
                         <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM20.5303 6.53033C20.8232 6.23744 20.8232 5.76256 20.5303 5.46967L15.7574 0.696698C15.4645 0.403804 14.9896 0.403805 14.6967 0.696698C14.4038 0.989591 14.4038 1.46446 14.6967 1.75736L18.9393 6L14.6967 10.2426C14.4038 10.5355 14.4038 11.0104 14.6967 11.3033C14.9896 11.5962 15.4645 11.5962 15.7574 11.3033L20.5303 6.53033ZM1 6L1 6.75L20 6.75L20 6L20 5.25L1 5.25L1 6Z" fill="white"/>
                         </svg>
-                    </a></button>
+                    </button>
                     <p>Стоимость разового обращения по любым вопросам тарифицируется по цене <b>3500₽</b> в час без приобретения пакета</p>
                 </div>
             </div>
@@ -358,52 +391,52 @@
                         <li>Гибкие условия сотрудничества</li>
                     </ul>
                 </div>
-                <span><button><a href="#">
+                <span><button class="callPopup">
                     <p>Связаться с нами</p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none">
                     <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75L1 5.25ZM20.5303 6.53033C20.8232 6.23744 20.8232 5.76256 20.5303 5.46967L15.7574 0.696698C15.4645 0.403804 14.9896 0.403805 14.6967 0.696698C14.4038 0.989591 14.4038 1.46446 14.6967 1.75736L18.9393 6L14.6967 10.2426C14.4038 10.5355 14.4038 11.0104 14.6967 11.3033C14.9896 11.5962 15.4645 11.5962 15.7574 11.3033L20.5303 6.53033ZM1 6L1 6.75L20 6.75L20 6L20 5.25L1 5.25L1 6Z" fill="white"/>
                     </svg>
-                </a></button></span>
+                </button></span>
             </div>
         </div>
         <div class="scheme">
             <span>
                 <h1>Схема работы нашей IT-компании</h1>
                 <p>Гарантируем: прозрачность, соблюдение сроков и индивидуальный подход на каждом этапе.</p>
-                <button id="leftScheme">
+                <button class="rightScheme swiper-button-prev">
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12" fill="none">
                         <path d="M1 5.3C0.613401 5.3 0.3 5.6134 0.3 6C0.3 6.3866 0.613401 6.7 1 6.7L1 5.3ZM16.495 6.49498C16.7683 6.22161 16.7683 5.77839 16.495 5.50503L12.0402 1.05025C11.7668 0.776886 11.3236 0.776886 11.0503 1.05025C10.7769 1.32362 10.7769 1.76684 11.0503 2.0402L15.0101 6L11.0503 9.9598C10.7769 10.2332 10.7769 10.6764 11.0503 10.9497C11.3236 11.2231 11.7668 11.2231 12.0402 10.9497L16.495 6.49498ZM1 6L1 6.7L16 6.7L16 6L16 5.3L1 5.3L1 6Z" fill="#000"/>
                     </svg>
                 </button>
-                <button id="rightScheme">
+                <button class="leftScheme swiper-button-next">
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12" fill="none">
                         <path d="M16 5.3C16.3866 5.3 16.7 5.6134 16.7 6C16.7 6.3866 16.3866 6.7 16 6.7L16 5.3ZM0.505024 6.49498C0.231657 6.22161 0.231657 5.77839 0.505024 5.50503L4.9598 1.05025C5.23316 0.776886 5.67638 0.776886 5.94975 1.05025C6.22311 1.32362 6.22311 1.76684 5.94975 2.0402L1.98995 6L5.94975 9.9598C6.22311 10.2332 6.22311 10.6764 5.94975 10.9497C5.67638 11.2231 5.23316 11.2231 4.9598 10.9497L0.505024 6.49498ZM16 6L16 6.7L0.999999 6.7L0.999999 6L0.999999 5.3L16 5.3L16 6Z" fill="#000"/>
                     </svg>
                 </button>
             </span>
             <div class="schemeScroll">
-                <div class="schemeList">
-                    <div class="schemeItem">
+                <div class="schemeList swiper-wrapper">
+                    <div class="schemeItem swiper-slide">
                         <img src="css/img/analise.png" alt="">
                         <h2>Анализ и консультация</h2>
                         <p>Проводим детальный аудит бизнес-процессов, определяем цели и подбираем оптимальные решения</p>
                     </div>
-                    <div class="schemeItem">
+                    <div class="schemeItem swiper-slide">
                         <img src="css/img/proekting.png" alt="">
                         <h2>Проектирование и согласование</h2>
                         <p>Разрабатываем техническое задание, утверждаем сроки, бюджет и этапы реализации.</p>
                     </div>
-                    <div class="schemeItem">
+                    <div class="schemeItem swiper-slide">
                         <img src="css/img/development.png" alt="">
                         <h2>Разработка и внедрение</h2>
                         <p>Создаем и интегрируем IT-решения (автоматизация, сайты, CRM), тестируем и дорабатываем систему.</p>
                     </div>
-                    <div class="schemeItem">
+                    <div class="schemeItem swiper-slide">
                         <img src="css/img/study.png" alt="">
                         <h2>Обучение и запуск</h2>
                         <p>Проводим обучение сотрудников, сопровождаем запуск проекта и настраиваем процессы.</p>
                     </div>
-                    <div class="schemeItem">
+                    <div class="schemeItem swiper-slide">
                         <img src="css/img/support.png" alt="">
                         <h2>Поддержка и развитие</h2>
                         <p>Обеспечиваем техническую поддержку, масштабируем решение под растущие задачи бизнеса.</p>
@@ -465,20 +498,20 @@
             <span>
                 <h1>Отзывы <b>довольных сотрудничеством</b> клиентов</h1>
                 <div class="buttons">
-                    <button id="leftRev">
+                    <button class="leftRev swiper-button-prev">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12" fill="none">
                         <path d="M16 5.3C16.3866 5.3 16.7 5.6134 16.7 6C16.7 6.3866 16.3866 6.7 16 6.7L16 5.3ZM0.505024 6.49498C0.231657 6.22161 0.231657 5.77839 0.505024 5.50503L4.9598 1.05025C5.23316 0.776886 5.67638 0.776886 5.94975 1.05025C6.22311 1.32362 6.22311 1.76684 5.94975 2.0402L1.98995 6L5.94975 9.9598C6.22311 10.2332 6.22311 10.6764 5.94975 10.9497C5.67638 11.2231 5.23316 11.2231 4.9598 10.9497L0.505024 6.49498ZM16 6L16 6.7L0.999999 6.7L0.999999 6L0.999999 5.3L16 5.3L16 6Z" fill="#D8D8D8"/>
                         </svg>
                     </button>
-                    <button id="rightRev">
+                    <button class="rightRev swiper-button-next">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12" fill="none">
                         <path d="M1 5.3C0.613401 5.3 0.3 5.6134 0.3 6C0.3 6.3866 0.613401 6.7 1 6.7L1 5.3ZM16.495 6.49498C16.7683 6.22161 16.7683 5.77839 16.495 5.50503L12.0402 1.05025C11.7668 0.776886 11.3236 0.776886 11.0503 1.05025C10.7769 1.32362 10.7769 1.76684 11.0503 2.0402L15.0101 6L11.0503 9.9598C10.7769 10.2332 10.7769 10.6764 11.0503 10.9497C11.3236 11.2231 11.7668 11.2231 12.0402 10.9497L16.495 6.49498ZM1 6L1 6.7L16 6.7L16 6L16 5.3L1 5.3L1 6Z" fill="#D8D8D8"/>
                         </svg>
                     </button>
                 </div>
             </span>
-            <div class="reviewList">
-                <div class="reviewItem show">
+            <div class="reviewList swiper-wrapper">
+                <div class="reviewItem swiper-slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32" fill="none">
                         <path d="M18.8235 0H0V32L18.8235 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
                         <path d="M47.0589 0H28.2354V32L47.0589 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
@@ -492,7 +525,7 @@
                     <h2>Георгий Юруков</h2>
                     <h3>Специалист ИТ-систем Larta Glass</h3>
                 </div>
-                <div class="reviewItem show">
+                <div class="reviewItem swiper-slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32" fill="none">
                         <path d="M18.8235 0H0V32L18.8235 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
                         <path d="M47.0589 0H28.2354V32L47.0589 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
@@ -505,7 +538,7 @@
                         систему резервного копирования</p>
                     <h2>Георгий Юруков</h2>                    <h3>Специалист ИТ-систем Larta Glass</h3>
                 </div>
-                <div class="reviewItem show">
+                <div class="reviewItem swiper-slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32" fill="none">
                         <path d="M18.8235 0H0V32L18.8235 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
                         <path d="M47.0589 0H28.2354V32L47.0589 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
@@ -518,7 +551,7 @@
                         систему резервного копирования</p>
                     <h2>Георгий Юруков</h2>                    <h3>Специалист ИТ-систем Larta Glass</h3>
                 </div>
-                <div class="reviewItem">
+                <div class="reviewItem swiper-slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32" fill="none">
                         <path d="M18.8235 0H0V32L18.8235 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
                         <path d="M47.0589 0H28.2354V32L47.0589 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
@@ -531,7 +564,7 @@
                         систему резервного копирования</p>
                     <h2>Георгий Юруков</h2>                    <h3>Специалист ИТ-систем Larta Glass</h3>
                 </div>
-                <div class="reviewItem">
+                <div class="reviewItem swiper-slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32" fill="none">
                         <path d="M18.8235 0H0V32L18.8235 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
                         <path d="M47.0589 0H28.2354V32L47.0589 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
@@ -544,7 +577,7 @@
                         систему резервного копирования</p>
                     <h2>Георгий Юруков</h2>                    <h3>Специалист ИТ-систем Larta Glass</h3>
                 </div>
-                <div class="reviewItem">
+                <div class="reviewItem swiper-slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32" fill="none">
                         <path d="M18.8235 0H0V32L18.8235 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
                         <path d="M47.0589 0H28.2354V32L47.0589 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
@@ -557,7 +590,7 @@
                         систему резервного копирования</p>
                     <h2>Георгий Юруков</h2>                    <h3>Специалист ИТ-систем Larta Glass</h3>
                 </div>
-                <div class="reviewItem">
+                <div class="reviewItem swiper-slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32" fill="none">
                         <path d="M18.8235 0H0V32L18.8235 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
                         <path d="M47.0589 0H28.2354V32L47.0589 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
@@ -570,7 +603,7 @@
                         систему резервного копирования</p>
                     <h2>Георгий Юруков</h2>                    <h3>Специалист ИТ-систем Larta Glass</h3>
                 </div>
-                <div class="reviewItem">
+                <div class="reviewItem swiper-slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32" fill="none">
                         <path d="M18.8235 0H0V32L18.8235 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
                         <path d="M47.0589 0H28.2354V32L47.0589 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
@@ -583,7 +616,7 @@
                         систему резервного копирования</p>
                     <h2>Георгий Юруков</h2>                    <h3>Специалист ИТ-систем Larta Glass</h3>
                 </div>
-                <div class="reviewItem">
+                <div class="reviewItem swiper-slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32" fill="none">
                         <path d="M18.8235 0H0V32L18.8235 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
                         <path d="M47.0589 0H28.2354V32L47.0589 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
@@ -596,7 +629,7 @@
                         систему резервного копирования</p>
                     <h2>Георгий Юруков</h2>                    <h3>Специалист ИТ-систем Larta Glass</h3>
                 </div>
-                <div class="reviewItem">
+                <div class="reviewItem swiper-slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32" fill="none">
                         <path d="M18.8235 0H0V32L18.8235 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
                         <path d="M47.0589 0H28.2354V32L47.0589 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
@@ -609,7 +642,7 @@
                         систему резервного копирования</p>
                     <h2>Георгий Юруков</h2>                    <h3>Специалист ИТ-систем Larta Glass</h3>
                 </div>
-                <div class="reviewItem">
+                <div class="reviewItem swiper-slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32" fill="none">
                         <path d="M18.8235 0H0V32L18.8235 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
                         <path d="M47.0589 0H28.2354V32L47.0589 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
@@ -622,7 +655,7 @@
                         систему резервного копирования</p>
                     <h2>Георгий Юруков</h2>                    <h3>Специалист ИТ-систем Larta Glass</h3>
                 </div>
-                <div class="reviewItem">
+                <div class="reviewItem swiper-slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32" fill="none">
                         <path d="M18.8235 0H0V32L18.8235 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
                         <path d="M47.0589 0H28.2354V32L47.0589 17.8824V0Z" fill="#22B0E5" fill-opacity="0.22"/>
@@ -795,30 +828,47 @@
     <footer>
         <nav>
             <div class="menuF">
-                <h1>Меню:</h1>
-                <a href="#">Наши решения</a>
-                <a href="#">О нас</a>
-                <a href="#">Отзывы</a>
-                <a href="#">Контакты</a>
+                <div class="top">
+                    <h1>Меню:</h1>
+                </div>
+                <div class="down">
+                    <a href="#">Наши решения</a>
+                    <a href="#">О нас</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Контакты</a>
+                </div>
             </div>
             <div class="serviceF">
-                <h1>Услуги:</h1>
-                <a href="#">Программы и разработка 1C</a>
-                <a href="#">Битрикс 24</a>
-                <a href="#">Разработка сайтов</a>
-                <a href="#">Разработка мобильных приложений</a>
-                <a href="#">Роботизация процессоров(RPA)</a>
-                <a href="#">IT-аутсорсинг/аутстаффинг</a>
+                <div class="top">
+                    <h1>Услуги:</h1>
+                </div>
+                <div class="down">
+                    <a href="#">Программы и разработка 1C</a>
+                    <a href="#">Битрикс 24</a>
+                    <a href="#">Разработка сайтов</a>
+                    <a href="#">Разработка мобильных приложений</a>
+                    <a href="#">Роботизация процессоров(RPA)</a>
+                    <a href="#">IT-аутсорсинг/аутстаффинг</a>
+                </div>
             </div>
             <div class="contactF">
-                <h1>Контакты:</h1>
-                <a href="tel:+79688030505">+7 968 803-05-05</a>
-                <a href="#" class="mail">grand@birs.tech</a>
-                <p>Часы работы 09:00-19:00</p>
+                <div class="top">
+                    <h1>Контакты:</h1>
+                </div>
+                <div class="down">
+                    <a href="tel:+79688030505">+7 968 803-05-05</a>
+                    <a href="#" class="mail">grand@birs.tech</a>
+                    <p>Часы работы 09:00-19:00</p>                    
+                </div>
             </div>
             <div class="socialF">
-                <button><a href="#"><img src="css/img/VK1.png" alt="VK"></a></button>
-                <button><a href="#"><img src="css/img/TG1.png" alt="TG"></a></button>
+                <div class="top">
+                    <h1>Социальные сети:</h1>
+                </div>
+                <div class="downF">
+                    <button><a href="#"><img src="css/img/VK1.png" alt="VK"></a></button>
+                    <button><a href="#"><img src="css/img/TG1.png" alt="TG"></a></button>
+                </div>
             </div>
         </nav>
         <img src="css/img/Logotip.png" alt="TECHGRAD">
