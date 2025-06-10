@@ -388,11 +388,6 @@ header {
             flex-direction: column;
             justify-content: space-between;
             text-decoration: none;
-            &:hover {
-                background-size: 105%;
-                transition: background-size 0.5s;
-            }
-
             &:first-child {
                 background-image: url(img/res1.jpg);
             }
@@ -809,8 +804,9 @@ header {
             align-items: center;
             border-radius: 1rem;
             & img {
-                height: 3rem;
-                width: auto;
+                height: 100%;
+                width: 100%;
+                object-fit: scale-down;
             }
         }
     }
@@ -1301,6 +1297,8 @@ footer {
         position: relative;
         box-shadow: 0px 0px 20px 10px #273645ab;
         width: 50%;
+        min-width: 50%;
+        max-width: 100%;
         background-color: #fff;
         padding: 2rem;
         border-radius: 1rem;

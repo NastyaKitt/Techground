@@ -498,6 +498,144 @@
 
 
 }
+@media (max-width:900px) {
+    html {
+        font-size: 14px;
+    }
+    .heroBlock, .forUs, .service, .developed, .rate, .advantages, .scheme, .tecnology, .review, .blog, .form2, footer {
+        padding: 2.5rem 2.5rem;
+    }
+    
+    .heroBlock {
+        & .myVideo {
+            width: 160%;
+        }
+        & .heroLeft {
+            & h1 {
+                font-size: 3rem;
+            }
+            & p {
+                font-size: 1.25rem;
+                width: 95%;
+            }
+        }
+
+    }
+    .forUs {
+        & .forUsLeft {
+            height: auto;
+            & .forUsLeftItem {
+                width: 48%;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    .service {
+        & .serviceList {
+            & .serviceItem {
+                width: 48%;
+            }
+        }
+    }
+    .rate {
+        & .rateList {
+            width: 100%;
+            & .rateItem {
+                width: 48%;
+                height: 30rem;
+            }
+        }
+    }
+    .advantages {
+        & .topAdvantages {
+            flex-direction: column;
+            & h1 {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            & .advantageItem {
+                width: 100%;
+            }
+        }
+        & .centerAdvantages {
+            & .advantageItem {
+                width: 100%;
+                height: auto;
+                margin-bottom: 1rem;
+                margin-top: 0;
+            }
+        }
+        & .bottomAdvantages {
+            flex-direction: column;
+            & .advantageItem {
+                width: 100%;
+            }
+
+            & span {
+                width: 100%;
+                & button {
+                    width: 100%;
+                    & p {
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    .scheme {
+        & span {
+            & .leftScheme, .rightScheme {
+                top: 38rem;
+            }
+        }
+    }
+    .tecnology {
+        & .tecnologyList {
+            height: 46rem;
+        }
+    }
+    .review {
+        & .reviewList {
+            & .reviewItem {
+                & p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .blog {
+        & .blogList {
+            flex-direction: column;
+            & .blogItem {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    footer {
+        & nav {
+            height: auto;
+            flex-wrap: wrap;
+        }
+    }
+    .form {
+        & .formList {
+            & span {
+                & p {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    .popup {
+        & form {
+            width: 75%;
+        }
+    }
+
+}
 @media (max-width:800px) {
     html {
         font-size: 12px;
@@ -728,9 +866,227 @@
     }
 
 }
+@media (max-width:700px) {
+    .service {
+        & .serviceList {
+            & .serviceItem {
+                width: 100%;
+            }
+        }
+    }
+
+}
+@media (max-width:700px) {
+    html {
+        font-size: 14px;
+    }
+    .heroBlock, .forUs, .service, .developed, .rate, .advantages, .scheme, .tecnology, .review, .blog, .form2, footer {
+        padding: 2.5rem 2.5rem;
+    }
+    .heroBlock {
+        & .myVideo {
+            width: 225%;
+            right: -10rem;
+        }
+        & .heroRight {
+            height: auto;
+        }
+        & .heroLeft {
+            & button {
+                width: 90%;
+            }
+        }
+
+    }
+    .forUs {
+        & .forUsLeft {
+            height: auto;
+            & .forUsLeftItem {
+                width: 75%;
+                height: auto;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .developed {
+        & .developedList {
+            & .developedItem.swiper-slide {
+                background-size: cover;
+            }
+        }
+    }
+    .rate {
+        & .rateList {
+            & .rateItem {
+                width: 100%;
+                &:nth-child(1), &:nth-child(3) {
+                    margin-right: 0;
+                }
+                &:nth-child(4) {
+                    height: auto;
+                    & p {
+                        font-size: 1.5rem;
+                        line-height: 1.5rem;
+                    }
+                    & button {
+                        width: 100%;
+                        & p {
+                            font-weight: 500;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .advantages {
+        & .topAdvantages {
+            flex-direction: column;
+            & h1 {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            & .advantageItem {
+                width: 100%;
+            }
+        }
+        & .centerAdvantages {
+            & .advantageItem {
+                width: 100%;
+                height: auto;
+                margin-bottom: 1rem;
+                margin-top: 0;
+            }
+        }
+        & .bottomAdvantages {
+            flex-direction: column;
+            & .advantageItem {
+                width: 100%;
+            }
+
+            & span {
+                width: 100%;
+                & button {
+                    width: 100%;
+                    & p {
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    .scheme {
+        & span {
+            & h1 {
+                width: 80%;
+            }
+            & p {
+                width: 100%;
+            }
+            & .rightScheme, .leftScheme {
+                top: 25rem;
+            }
+        }
+    }
+    .tecnology {
+        & .tecnologyList {
+            flex-direction: row;
+            height: auto;
+            & .tecnologyItem {
+                width: 31%;
+                padding: 1rem;
+                margin: 0;
+                margin-bottom: 1rem;
+                & img {
+                    object-fit: scale-down;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .blog {
+        & .blogList {
+            flex-direction: column;
+            align-items: center;
+            & .blogItem {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .form {
+        #myVideo {
+            width: 549%;
+        }
+        & .form2 {
+            flex-direction: column;
+            & form {
+                margin-top: 2rem;
+            }
+        }
+    }
+    footer {
+        & nav {
+            & .down {
+                height: 16rem;
+            }
+            & .contactF {
+                height: 8rem;
+                margin-top: 5rem;
+            }
+            & .socialF {
+                height: 8rem;
+                margin-top: 5rem;
+            }
+        }
+    }
+    .popup {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        & form {
+            width: 75%;
+        }
+    }
+}
+@media (max-width:500px) {
+    .developed {
+        & .developedList {
+            & .developedItem.swiper-slide {
+                & h2 {
+                    width: 80%;
+                }
+            }
+        }
+    }
+    .heroBlock {
+        height: auto;
+        flex-direction: column;
+        & .heroRight {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+        & .myVideo {
+            width: 355%;
+            right: -45rem;
+            top: 0;
+        }
+        & .heroRightTop, .heroRightBottom {
+            width: 45%;
+        }
+        & .heroLine {
+            display: none;
+        }
+    }
+}
 @media (max-width:425px) {
     html {
-        font-size: 10px;
+        font-size: 12px;
     }
     .heroBlock, .forUs, .service, .developed, .rate, .advantages, .scheme, .tecnology, .review, .blog, .form2, footer {
         padding: 2.5rem 2.5rem;
@@ -745,6 +1101,19 @@
             }
         }
     }
+    .headerRight {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        & span {
+            width: 100%;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+
     .heroBlock {
         & .heroLeft {
             & p {
@@ -847,7 +1216,7 @@
         }
     }
     .popup {
-        justify-content: start;
+        justify-content: center;
         width: auto;
         & form {
             width: 95%;
@@ -872,7 +1241,7 @@
     }
     .heroBlock {
         & .myVideo {
-            width: 375%;
+            width: 410%;
             right: -35rem;
         }
     }
@@ -980,11 +1349,11 @@
     }
     .tecnology {
         & .tecnologyList {
-            
             flex-direction: column;
             height: 78rem;
+            align-content: space-between;
             & .tecnologyItem {
-                width: 50%;
+                width: 45%;
                 padding: 1rem;
                 margin-bottom: 1rem;
             }
@@ -1035,17 +1404,110 @@
     }
     .blog {
         & span {
-            align-items: flex-end;
+            flex-direction: column;
+            align-items: flex-start;
+            & h1 {
+                width: 100%;
+            }
             & button {
-                margin: 0;
+                margin: 1rem 0 0;
+            }
+        }
+        & .blogList {
+            flex-direction: column;
+            align-items: center;
+            & .blogItem {
+                width: 100%;
+                margin-bottom: 1remw;
             }
         }
     }
+    .forUs {
+        & .forUsRight {
+            text-align: left;
+            & h1 {
+                font-size: 2.5rem;
+                line-height: 3rem;
+            }
+        }
+    }
+    .service {
+        & h1 {
+            font-size: 3rem;
+        }
+    }
+    .developed {
+        & .developedList {
+            & .developedItem.swiper-slide {
+                height: 21.625rem;
+            }
+        }
+    }
+    .developed {
+        & .developedList {
+            & .developedItem {
+                & h2 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .rate {
+        & .rateList {
+            & .rateItem {
+                &:nth-child(4) {
+                    height: auto;
+                    & p {
+                        line-height: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .review {
+        & .reviewList {
+            & .reviewItem {
+                height: auto;
+                & p {
+                    font-size: 1.25rem;
+                    margin: 1rem 0;
+                }
+            }
+        }
+    }
+    footer {
+        & nav {
+            & .down {
+                height: 16rem;
+            }
+            & .contactF {
+                height: 8rem;
+                margin-top: 5rem;
+            }
+            & .socialF {
+                height: 8rem;
+                margin-top: 5rem;
+            }
+        }
+    }
+    .form {
+        & form {
+            & .downForm {
+                & button {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
 }
 @media (max-width:375px) {
+    .heroBlock, .forUs, .service, .developed, .rate, .advantages, .scheme, .tecnology, .review, .blog, .form2, footer {
+        padding: 1.5rem 1.5rem;
+    }
     html {
         padding: 1rem;
-        font-size: 8px;
+        font-size: 10px;
     }
     .headerLeft {
         & nav {
@@ -1071,7 +1533,7 @@
                     & button {
                         & p {
                             font-size: 1.5rem;
-                            font-weight: 700;
+                            font-weight: 500;
                             color: #fff;
                         }
                     }
@@ -1219,7 +1681,7 @@
     .heroBlock {
         & .myVideo {
             top: 0;
-            width: 275%;
+            width: 375%;
         }
     }
     .rate {
@@ -1359,6 +1821,18 @@
         }
     }
     .blog {
+        & span {
+            & button {
+                & a {
+                    & p {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .blog {
         & .blogList {
             flex-direction: column;
             align-items: center;
@@ -1386,6 +1860,7 @@
         & .formList {
             & span {
                 & p {
+                    width: 80%;
                     font-size: 1.5rem;
                 }
             }
@@ -1409,8 +1884,8 @@
         & .tecnologyList {
             & .tecnologyItem {
                 & img {
-                    height: 5rem;
-                    width: auto;
+                    height: 100%;
+                    width: 100%;
                 }
             }
         }
@@ -1419,8 +1894,8 @@
         & nav {
             & .socialF {
                 & button {
-                    width: 5rem;
-                    height: 5rem;
+                    width: 4rem;
+                    height: 4rem;
                 }
             }
         }
@@ -1429,13 +1904,25 @@
         & nav {
             & .downF {
                 justify-content: space-between;
-                width: 130%;
+                width: 100%;
             }
         }
     }
     .headerLeft {
         & nav {
             width: 65%;
+        }
+    }
+    .form {
+        & form {
+            & .downForm {
+                & p {
+                    font-size: 1.4rem;
+                }
+                & button {
+                    font-size: 1.4rem;
+                }
+            }
         }
     }
 
