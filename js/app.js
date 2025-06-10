@@ -9,8 +9,11 @@ new Swiper(".developedScroll", {
   },
   keyboard: true,
   breakpoints: {
-    426: {
+    600: {
       slidesPerView: 2,
+    },
+    425: {
+      slidesPerView: 1.15,
     },
     320: {
       slidesPerView: 1,
@@ -28,11 +31,16 @@ new Swiper(".schemeScroll", {
   },
   keyboard: true,
   breakpoints: {
-    426: {
+    600: {
       slidesPerView: 3,
     },
+    500: {
+      spaceBetween: 16,
+      slidesPerView: 1.5,
+    },
     320: {
-      slidesPerView: 2,
+      spaceBetween: 16,
+      slidesPerView: 1.5,
     }
   },
 });
@@ -48,8 +56,11 @@ new Swiper(".review", {
   },
   keyboard: true,
   breakpoints: {
-    769: {
+    1024: {
       slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 2,
     },
     320: {
       slidesPerView: 1,
